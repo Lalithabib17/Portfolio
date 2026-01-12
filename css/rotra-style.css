@@ -1,0 +1,465 @@
+:root {
+  --primary: #7c3aed;
+  --cyan: linear-gradient(180deg, #E53935 0%, #EA4946 49.04%, #FF8A88 100%);
+  --cyan-dark: linear-gradient(180deg, #E53935 0%, #EA4946 49.04%, #FF8A88 100%);
+  --cyan-text: #E53935;
+  --bg-dark: #0f0f0f;
+  --bg-darker: #0a0a0a;
+  --text-light: #ffffff;
+  --text-muted: #b0b0b0;
+  --border-color: #222222;
+}
+
+* { 
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  overflow-x: hidden;
+}
+
+/* Navigation */
+.navbar {
+  background-color: rgba(15, 15, 15, 0.95) !important;
+  border-bottom: 1px solid var(--border-color);
+  backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--cyan-text) !important;
+}
+
+/* Hero Section */
+.rotra-hero {
+  background: #000000;
+  position: relative;
+  overflow: hidden;
+}
+
+.rotra-hero::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: rgba(0, 217, 255, 0.1);
+  border-radius: 50%;
+  top: -100px;
+  left: -100px;
+  filter: blur(80px);
+}
+
+.rotra-hero::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: rgba(0, 217, 255, 0.08);
+  border-radius: 50%;
+  bottom: -100px;
+  right: -100px;
+  filter: blur(80px);
+}
+
+.min-vh-75 {
+  min-height: 75vh;
+}
+
+.rotra-title {
+  font-size: 4rem;
+  font-weight: 700;
+  background: var(--cyan-dark) ;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.rotra-subtitle {
+ padding: 20px 0px 20px 0px;
+  font-size: 20px;
+  color: #b0b0b0;
+  max-width: 1045px;
+  margin: 0 auto;
+  line-height: 1.8;
+  background: linear-gradient(91.02deg, #690503 -21.91%, #151517 17.87%, #151517 83.39%, #E53935 179.86%);
+
+  border-radius:16px ;
+}
+
+
+
+/* Section Titles */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.text-cyan {
+  color: var(--cyan-text);
+}
+
+/* overview text */
+.rotra-overview{
+  background-image: url("../images/rotra_project_overview.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Section Text */
+.section-text {
+  color: var(--text-muted);
+  line-height: 1.8;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.highlight {
+  background: var(--cyan-dark) ;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+
+.highlight-blue {
+  background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Role Cards */
+.role-card {
+  background: linear-gradient(99.48deg, #0E0E11 7.15%, #5B2508 288.8%);
+  border-left:5px solid var(--cyan-text) ;
+  border-radius: 15px;
+  padding: 20px;
+  /* text-align: center; */
+  transition: all 0.4s ease;
+  height: 100%;
+}
+
+/* .role-card:hover {
+  background: linear-gradient(99.48deg, #0E0E11 7.15%, #5B2508 288.8%);
+  border-color: #5B2508;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px #5B2508;
+} */
+
+.role-icon {
+  width: 70px;
+  height: 70px;
+  /* background: #3b82f6; */
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin: 0 auto 1.5rem; */
+  font-size: 1.8rem;
+  color: var(--cyan-text);
+
+}
+
+.role-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.8rem;
+}
+
+.role-card h5 {
+  color: var(--text-light);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.role-card p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Challenge Items */
+.challenge-card {
+  background: linear-gradient(90.99deg, #0E0E11 0%, #1B1B1F 119.05%, #626277 179.87%);
+  border-left:5px solid var(--cyan-text) ;
+  border-radius: 15px;
+  padding: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  transition: all 0.4s ease;
+}
+
+.challenge-content {
+  flex: 1;
+}
+
+.challenge-item {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.challenge-item:last-child {
+  border-bottom: none;
+}
+
+.challenge-icon {
+  font-size: 2rem;
+  color: #ffffff;
+  min-width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #E53935 0%, #17022B 70.71%);
+  border-radius: 10px;
+}
+
+.challenge-title{
+  color: var(--cyan-text);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.challenge-content h5 {
+  color: var(--text-light);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.challenge-content p {
+  color: var(--text-muted);
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+/* Solution Cards */
+.solution-card {
+  background: #08010F;
+  border-left: 3px solid var(--cyan-text);
+  padding: 20px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  height: 100%;
+  font-size: 20px;
+}
+/* 
+.solution-card:hover {
+  border-color: var(--cyan-text);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px #5B2508;
+} */
+
+.solution-icon {
+  font-size: 25px;
+  color: var(--cyan-text);
+}
+
+.solution-card h5 {
+  color: var(--text-light);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.solution-card p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Design Approach Items */
+.design-approach-item {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  
+}
+
+
+.approach-number {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--cyan-text);
+  min-width: 50px;
+}
+
+.approach-content h5 {
+  color: var(--text-light);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.approach-content p {
+  color: var(--text-muted);
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+/* Impact Cards */
+.impact-card {
+  background: linear-gradient(247.03deg, #131212 63.01%, #742323 159.66%);
+  padding: 30px 20px 30px 20px;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+/* 
+.impact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px #26160b;
+} */
+
+.impact-card h5 {
+  color: var(--text-light);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.impact-card p {
+  color: var(--text-muted);
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+/* Tools Grid */
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 2rem;
+}
+
+.tool-item {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+/* 
+.tool-item:hover {
+  background: rgba(0, 217, 255, 0.15);
+  border-color: var(--cyan-text);
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 217, 255, 0.2);
+} */
+
+.tool-icon {
+  background: linear-gradient(135deg, #E53935 0%, #000000 70.71%);
+  border-radius: 12px;
+  padding: 20px 0px 20px 0px;
+  color: var(--cyan-text);
+  margin-bottom: 1rem;
+}
+
+.underline{
+width: 128px;
+height: 4px;
+background: linear-gradient(90deg, #E53935 0%, rgba(0, 0, 0, 0) 100%);
+border-radius: 0px;
+flex: none;
+order: 1;
+flex-grow: 0;
+margin-bottom: 20px;
+align-items: center;
+text-align: center;
+}
+.underline-content {
+  display: flex;
+  justify-content: center;
+}
+
+
+.tool-item p {
+  color: var(--text-light);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* Mockup Image */
+.rotra-mockup {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 20px 60px rgba(0, 217, 255, 0.2);
+}
+
+/* Buttons */
+.btn-cyan {
+  color: var(--cyan-text);
+  border: none;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* .btn-cyan:hover {
+  background: linear-gradient(135deg, var(--cyan-dark) 0%, var(--cyan) 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 217, 255, 0.3);
+  color: var(--bg-dark);
+} */
+
+/* Footer */
+.bg-darker {
+  background-color: var(--bg-darker) !important;
+  border-top: 1px solid var(--border-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .rotra-overview{
+    background-image: none;
+  }
+  .rotra-title {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+  }
+
+  .rotra-subtitle {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .challenge-item,
+  .design-approach-item {
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+
+  .tools-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+  }
+
+  .role-card,
+  .solution-card,
+  .impact-card {
+    padding: 1.5rem;
+  }
+}
+
+/* Scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
