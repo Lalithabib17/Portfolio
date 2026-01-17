@@ -292,10 +292,14 @@ body {
 
 
 .approach-number {
+  background: linear-gradient(135deg, #E53935 0%, #000000 70.71%);
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--cyan-text);
   min-width: 50px;
+  height: 50px;
+  padding: 6px;
+  text-align: center;
+  border-radius: 12px;
 }
 
 .approach-content h5 {
@@ -457,6 +461,26 @@ text-align: center;
   .impact-card {
     padding: 1.5rem;
   }
+.challenge-card{
+  padding: 1rem 0rem 0rem 1rem;
+}
+.h3, h3{
+  font-size: 1rem;
+}
+    .approach-number {
+        background: linear-gradient(135deg, #E53935 0%, #000000 70.71%);
+        height: 50px;
+        padding: 4px;
+        text-align: center;
+        border-radius: 10px;
+    }
+    .min-vh-75{
+      min-height: 45vh;
+    }
+
+}
+.challenge-content p{
+  font-size: 0.9rem;
 }
 
 /* Scroll behavior */

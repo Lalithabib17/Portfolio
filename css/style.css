@@ -696,12 +696,11 @@ html {
 
 /* Responsive Design */
 
-/* Tablet */
-@media (max-width: 991px) {
-  .section-title {
-    font-size: 2rem;
+/* Mobile */
+@media (max-width: 768px) {
+  .skill-tag{
+    padding: 12px 8px;
   }
-
   .hero-title {
     font-size: 2.5rem;
   }
@@ -713,31 +712,37 @@ html {
   .navbar-nav .nav-link {
     margin: 0.5rem 0;
   }
-}
 
-/* Mobile */
-@media (max-width: 767px) {
+
   .hero-image {
   max-width: 500px;
+  margin-left: -30%;
   }
   .section-title {
-    font-size: 1.75rem;
+    font-size: 20px;
+    text-align: center;
   }
 
+
   .section-subtitle {
-    font-size: 1rem;
+    font-size: 12px;
   }
 
   .hero-title {
-    font-size: 2rem;
+    font-size: 36px;
+  }
+
+  .about-text {
+  font-size: 12px;
   }
 
   .hero-subtitle {
-    font-size: 1rem;
+    font-size: 12px;
   }
 
   .hero-buttons {
-    flex-direction: column;
+    /* flex-direction: column; */
+    display: none;
   }
 
   .hero-buttons .btn {
@@ -753,11 +758,20 @@ html {
   }
 
   .contact-item {
-    flex-direction: column;
-    text-align: center;
+    /* flex-direction: column;
+    text-align: center; */
     gap: 1rem;
+    padding: 10px;
   }
 
+  .contact-icon{
+    width: 40px;
+    height: 40px;
+  }
+
+  .contact-value{
+    font-size: 14px;
+  }
   .contact-info {
     margin-left: 0;
   }
@@ -775,7 +789,7 @@ html {
   }
 }
 
-@media (max-width: 575px) {
+/* @media (max-width: 575px) {
   .hero-title {
     font-size: 1.75rem;
   }
@@ -787,6 +801,6 @@ html {
   .navbar-brand {
     font-size: 1.1rem;
   }
-}
+} */
 
 
